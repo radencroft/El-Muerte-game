@@ -13,11 +13,15 @@ public class Player : MonoBehaviour
     public int HP;
     [HideInInspector] public int health;
     public float timeToDie;
-    
+
+
+    [HideInInspector] public float horizontal;
+    [HideInInspector] public float vertical;
+
 
     public void Flip()
     {
-        if (rb.velocity.x > 0 && !facingRight || (rb.velocity.x < 0 && facingRight))
+        if (horizontal > 0 && !facingRight || (horizontal < 0 && facingRight))
         {
             facingRight = !facingRight;
             transform.Rotate(0f, 180f, 0f);

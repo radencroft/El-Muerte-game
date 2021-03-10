@@ -5,10 +5,12 @@ using UnityEngine;
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] private float selectedTime;
-    private bool canStart; 
+    private bool canStart;
+     
     void Update()
     {
         StartGame();
+        ExitGame(); 
     }
 
     private void StartGame()
@@ -40,7 +42,7 @@ public class MainMenu : MonoBehaviour
 
     private void ExitGame()
     {
-        if (Input.GetButtonDown("Escape"))
+        if (Input.GetButtonDown("Exit"))
         {
             Application.Quit();
         }

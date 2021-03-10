@@ -12,13 +12,13 @@ public class LadyBlue : Enemy
     [SerializeField] private Vector2 angle;
     [SerializeField] private float torque;
     [SerializeField] private float strenght;
-     
-    private void Start()
+    private void Awake()
     {
         health = HP;
         anim = GetComponent<Animator>();
         col = GetComponent<BoxCollider2D>();
     }
+     
 
 
 

@@ -29,7 +29,7 @@ public class ShadowArea : MonoBehaviour
     private void Update()
     {
         Spawn();
-        //SwitchPlaces();
+        SwitchPlaces();
     }
 
     private void Spawn()
@@ -46,28 +46,31 @@ public class ShadowArea : MonoBehaviour
         if (isSpawn && Input.GetButtonDown("Ability") && !Input.GetButton("Up"))
         {
             isSpawn = false;
-            Instantiate(deSpawnClone, GameObject.FindGameObjectWithTag("shadow").transform.position, Quaternion.identity);
+            if (GameObject.FindGameObjectWithTag("shadow") != null)
+            {
+                Instantiate(deSpawnClone, GameObject.FindGameObjectWithTag("shadow").transform.position, Quaternion.identity);
+            }
             Destroy(GameObject.FindGameObjectWithTag("shadow")); 
         }
     }
 
-     
+
 
     private void SwitchPlaces()
     {
         if (canSpawn && isSpawn && Input.GetButtonDown("Ability") && Input.GetButton("Up"))
-        {
-            Vector3 tmpPL = player.transform.position;
+        { 
             Transform clone = GameObject.FindGameObjectWithTag("shadow").transform;
 
-            player.transform.position = clone.transform.position;
-            clone.transform.position = tmpPL; 
-        } 
+            player.transform.position = clone.transform.position; 
+             
+            if (GameObject.FindGameObjectWithTag("shadow") != null)
+            {
+                Instantiate(deSpawnClone, GameObject.FindGameObjectWithTag("shadow").transform.position, Quaternion.identity);
+            }
+            Destroy(GameObject.FindGameObjectWithTag("shadow"));
+              
+        }
     }
 
-    private IEnumerator enableSpawn()
-    {
-        yield return new WaitForSeconds(respawnTime);
-        isSpawn = false;
-    }
 }

@@ -24,8 +24,6 @@ public class RestartGame : MonoBehaviour
 
     [Header("\"Ja cu load-ovati sledecu scenu, no worries bro\"")]
     [SerializeField] private bool waitAndLoad = false;
-
-    [ConditionalHide("waitAndLoad", true)]
     [SerializeField] private float seconds;            //cekanje pre load scene 
 
     [Header("Time Between Transitions #APPEAR")]

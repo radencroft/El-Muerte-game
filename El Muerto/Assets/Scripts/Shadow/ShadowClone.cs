@@ -35,6 +35,10 @@ public class ShadowClone : MonoBehaviour
     [SerializeField] private GameObject falcon;
     public bool isFalcon;
 
+    [Header("CLONE STUFF")]
+    [SerializeField] private GameObject despawnClone; 
+
+
     private void Awake()
     { 
         anim = GetComponent<Animator>();
@@ -138,7 +142,7 @@ public class ShadowClone : MonoBehaviour
 
     private bool AmInShadows()
     { 
-        bool noGroundAhead = Physics2D.Raycast(groundCheck.position, Vector2.down, groundDistance); 
+        bool noGroundAhead = Physics2D.Raycast(groundCheck.position, Vector2.down, groundDistance, 1 << 10); 
         return noGroundAhead;
     } 
      
@@ -156,7 +160,8 @@ public class ShadowClone : MonoBehaviour
     {
         if (other.gameObject.layer == 10)
         {
-            grounded = false;
+            grounded = false; 
+            Instantiate(despawnClone, transform.transform.position, Quaternion.identity);
             Destroy(this.gameObject);
         }
     }

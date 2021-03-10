@@ -25,7 +25,7 @@ public class Noose : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "bullet")
+        if (other.gameObject.tag == "bullet" || other.gameObject.tag == "enemy bullet")
         {
             Rigidbody2D rbRope = rope.GetComponent<Rigidbody2D>();
             rbRope.bodyType = RigidbodyType2D.Dynamic;

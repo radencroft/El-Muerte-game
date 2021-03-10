@@ -6,7 +6,12 @@ using UnityEngine.SceneManagement;
 public class SceneController : MonoBehaviour
 {
     [SerializeField] private string sceneName;
-     
+
+    private void Start()
+    {
+        Cursor.visible = false;
+    }
+
     public void ChangeScene()
     {
         SceneManager.LoadScene(sceneName);

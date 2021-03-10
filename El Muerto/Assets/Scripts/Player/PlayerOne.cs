@@ -4,10 +4,7 @@ using UnityEngine;
 
 public class PlayerOne : Player
 { 
-    private Inventory inventory;
-
-    private float horizontal;
-    private float vertical;
+    private Inventory inventory; 
 
     [Header("MOVEMENT")]
     [SerializeField] private float ST;
