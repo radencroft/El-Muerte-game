@@ -23,6 +23,7 @@ TextureImporter:
     21300036: all_weapons_18
     21300038: all_weapons_19
     21300040: all_weapons_20
+    21300042: all_weapons_21
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -482,7 +483,7 @@ TextureImporter:
         width: 17
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -502,13 +503,33 @@ TextureImporter:
         width: 17
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: af9146acd6b1add4c8674cd68d2eb5ba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: all_weapons_21
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 43
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cce48358a7229442b7d2c06019cf356
       vertices: []
       indices: 
       edges: []

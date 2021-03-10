@@ -16,6 +16,7 @@ public class ShadowArea : MonoBehaviour
     [Header("SHADOW CLONE")]
     [SerializeField] private GameObject shadowClone;
     [SerializeField] private Transform spawnPoint;
+    [SerializeField] private GameObject deSpawnClone;
 
     private GameObject player; 
 
@@ -28,7 +29,7 @@ public class ShadowArea : MonoBehaviour
     private void Update()
     {
         Spawn();
-        SwitchPlaces();
+        //SwitchPlaces();
     }
 
     private void Spawn()
@@ -44,9 +45,9 @@ public class ShadowArea : MonoBehaviour
         
         if (isSpawn && Input.GetButtonDown("Ability") && !Input.GetButton("Up"))
         {
-            StartCoroutine(enableSpawn());
-            GameObject.FindGameObjectWithTag("shadow").GetComponent<Animator>().SetTrigger("bye");
-            return;
+            isSpawn = false;
+            Instantiate(deSpawnClone, GameObject.FindGameObjectWithTag("shadow").transform.position, Quaternion.identity);
+            Destroy(GameObject.FindGameObjectWithTag("shadow")); 
         }
     }
 

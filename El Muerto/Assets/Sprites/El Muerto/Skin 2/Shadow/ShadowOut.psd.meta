@@ -9,6 +9,7 @@ TextureImporter:
     21300008: ShadowOut_4
     21300010: ShadowOut_5
     21300012: ShadowOut_6
+    21300014: ShadowOut_7
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -215,6 +216,26 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f86678cdb04fbe74c9a3bee60eafcb9b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowOut_7
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 23
+        width: 14
+        height: 2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b1c0fb56b8c7a741877de632aa7d466
       vertices: []
       indices: 
       edges: []

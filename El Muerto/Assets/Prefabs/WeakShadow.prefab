@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3758488460863914574}
   - component: {fileID: 3758488460863914568}
   - component: {fileID: 61254701146558676}
-  m_Layer: 9
+  m_Layer: 13
   m_Name: WeakShadow
   m_TagString: shadow
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ MonoBehaviour:
   stopShooting: 0
   inDialogue: 0
   smoke: {fileID: 1115708647118742263, guid: e418c3bf5c1ac08458103c7ecfd438fa, type: 3}
-  bullet: {fileID: 7833526354561872302, guid: 92bec7cafc846e549906fb9c506cb1cc, type: 3}
+  bullet: {fileID: 6264319901378030735, guid: 7c87a6dcddb86f44b84ba42466bcfbb0, type: 3}
   checkSize: {x: 0.25, y: 0.1}
   whatIsGround:
     serializedVersion: 2
@@ -242,7 +242,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3758488462929848773}
-  m_Layer: 9
+  m_Layer: 13
   m_Name: FirePos
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -272,7 +272,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6796505096668734268}
-  m_Layer: 9
+  m_Layer: 13
   m_Name: Ground Check
   m_TagString: Untagged
   m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
