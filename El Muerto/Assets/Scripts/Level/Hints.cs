@@ -171,7 +171,7 @@ public class Hints : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "player")
+        if (other.gameObject.tag == "player" && other.GetComponent<PlayerJump>().grounded)
         {
             inRange = true;
             startTalking = true;
@@ -180,7 +180,7 @@ public class Hints : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.tag == "player")
+        if (other.gameObject.tag == "player" && other.GetComponent<PlayerJump>().grounded)
         {
             inRange = false;
             Destroy(this.gameObject);

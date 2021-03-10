@@ -64409,8 +64409,8 @@ MonoBehaviour:
   xOffset: 0
   mark: {fileID: 0}
   dialogue:
-  - If you have a mirror clone. You can press 'F' while holding down to teleport to
-    his location.
+  - If you have a mirror clone. You can press 'F' while holding 'UP' arrow key to
+    teleport to his location.
   - ' '
   startTalking: 0
   areaSize: {x: 0.25, y: 0.25}
@@ -72203,7 +72203,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1771784840}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.871, y: -0.52, z: 10.706764}
+  m_LocalPosition: {x: 9.75, y: -0.52, z: 10.706764}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2009450871}

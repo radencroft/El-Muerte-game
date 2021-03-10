@@ -6,7 +6,12 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] private float selectedTime;
     private bool canStart;
-     
+
+    private void Start()
+    {
+        SaveManager.level = 1;
+    }
+
     void Update()
     {
         StartGame();
