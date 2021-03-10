@@ -11,6 +11,8 @@ public class Gringo : Enemy
     [SerializeField] private GameObject smoke;
     [SerializeField] private float fireDistance;
 
+
+
     private void Start()
     {
         health = HP;

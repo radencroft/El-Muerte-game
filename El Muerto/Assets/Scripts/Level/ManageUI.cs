@@ -101,7 +101,7 @@ public class ManageUI : MonoBehaviour
 
             return;
         }
-        else if (Input.GetButtonDown("Select") &&  inPrompt)
+        else if (Input.GetButtonDown("Exit") &&  inPrompt)
         {
             inPrompt = false;
             exitPrompt.enabled = false;
@@ -114,8 +114,9 @@ public class ManageUI : MonoBehaviour
             return;
         }
 
-        if (inPrompt && Input.GetButtonDown("Exit"))
+        if (inPrompt && Input.GetButtonDown("Select"))
         {
+            FindObjectOfType<Inventory>().DropWeapon("pistol A");
             FindObjectOfType<SceneController>().LoadScene(menuScene);
         } 
     }

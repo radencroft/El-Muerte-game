@@ -29,12 +29,17 @@ public class Player : MonoBehaviour
         health -= damage;
     }
 
+    public void TakeDamage(int dmg)
+    {
+        anim.SetTrigger("damage");
+        ReduceHealth(dmg);
+    }
+
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "enemy bullet")
         {
-            anim.SetTrigger("damage");
-            ReduceHealth(1);
+            TakeDamage(1);
         }
 
     }
@@ -43,7 +48,7 @@ public class Player : MonoBehaviour
     { 
         if (other.gameObject.tag == "quicksand")
         {
-            health = 0;
+            ReduceHealth(5);
         } 
     }
 

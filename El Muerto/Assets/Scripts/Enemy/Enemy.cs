@@ -7,14 +7,19 @@ public class Enemy : MonoBehaviour
     [HideInInspector] public GameObject player;
     [HideInInspector] public Rigidbody2D rb;
     [HideInInspector] public Animator anim;
-    [HideInInspector] public BoxCollider2D col;
-
+    [HideInInspector] public BoxCollider2D col; 
 
     [HideInInspector] public bool facingRight;
 
+
+    [Header("GIVE ITEM")] 
+    public GameObject item;
+    public float spawnTime;
+
+    [Header("ENEMY STATS")]
     public int HP;
     public int damage;
-    public int health;
+    [HideInInspector] public int health;
 
 
     public void FacingDirection()
@@ -45,10 +50,18 @@ public class Enemy : MonoBehaviour
     public void Die()
     {
         if (health <= 0)
-        {
+        { 
+            StartCoroutine(spawnItem());
             health = 0;
             anim.SetTrigger("dead");
             col.enabled = false;
         }
+    }
+
+    IEnumerator spawnItem()
+    {
+        yield return new WaitForSeconds(spawnTime);
+        if (item != null) { Instantiate(item, transform.position, transform.rotation); }
+        Destroy(this);
     }
 }

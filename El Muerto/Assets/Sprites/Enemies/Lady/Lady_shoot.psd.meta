@@ -11,6 +11,12 @@ TextureImporter:
     21300012: Lady_shoot_6
     21300014: Lady_shoot_7
     21300016: Lady_shoot_8
+    21300018: Lady_shoot_9
+    21300020: Lady_shoot_10
+    21300022: Lady_shoot_11
+    21300024: Lady_shoot_12
+    21300026: Lady_shoot_13
+    21300028: Lady_shoot_14
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -96,7 +102,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9e61af1e9cf3cb418f6d26c7fcb027a
+      spriteID: 76398068e2b79c54c9f37ccb1a913458
       vertices: []
       indices: 
       edges: []
@@ -116,7 +122,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce80a699106e4d645bf887f25475d078
+      spriteID: 292bebf567a6de548b93ec4458b1225d
       vertices: []
       indices: 
       edges: []
@@ -136,7 +142,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a6a2528104a1934d8b21eebdb76018d
+      spriteID: 093bc26120d037b4ab5ba5a4638d1e52
       vertices: []
       indices: 
       edges: []
@@ -156,7 +162,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff19a74bb96245b48ace10b87b5f6bb8
+      spriteID: a1bf108e788cb464e8d4aed2cef00f80
       vertices: []
       indices: 
       edges: []
@@ -176,7 +182,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9cfde4bec31bb84b920a0cf4566e2c0
+      spriteID: c51909d7facc69042a0c4d2bc7f655f2
       vertices: []
       indices: 
       edges: []
@@ -196,7 +202,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d92f2320a4e71d44182fbe97aa937eeb
+      spriteID: 0bceb79ec10bcd24c9c7255d0cd33952
       vertices: []
       indices: 
       edges: []
@@ -216,7 +222,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be71399235e330543972ba6840b3f59c
+      spriteID: eff8b0bb156dc004581796474b9bd6f3
       vertices: []
       indices: 
       edges: []
@@ -236,7 +242,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d591c786dd4eee345ae8d58e5367bdd0
+      spriteID: 6654357ef4862da40871cb1071f44497
       vertices: []
       indices: 
       edges: []
@@ -245,9 +251,129 @@ TextureImporter:
       name: Lady_shoot_8
       rect:
         serializedVersion: 2
-        x: 9
-        y: 6
-        width: 3
+        x: 0
+        y: 25
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b92427e75bf69f6438de3733eee04bb3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lady_shoot_9
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 25
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fc83370aa0d2474098a3fae8113c9b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lady_shoot_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 25
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47bdc2630aca5824a8dbe580d5afe6cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lady_shoot_11
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 25
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e1f8ffa1151914c8e16c4e9a8813dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lady_shoot_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e7450585334f84a9fe9dd5829aab1e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lady_shoot_13
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 0
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9808c464aefec4e8471c89a9281654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lady_shoot_14
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 4
+        width: 4
         height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -256,7 +382,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e235855487847fc468fefe762dd7e1f0
+      spriteID: 5ba1d1184a3627b42ac4bdb22877b818
       vertices: []
       indices: 
       edges: []

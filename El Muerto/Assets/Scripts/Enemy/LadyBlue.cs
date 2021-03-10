@@ -8,9 +8,10 @@ public class LadyBlue : Enemy
     [SerializeField] private Transform throwPoint;
     [SerializeField] private GameObject bottle;
 
-    public Vector2 angle;
-
-    public float streingth;
+    [Header("TRAJECTORY")]
+    [SerializeField] private Vector2 angle;
+    [SerializeField] private float torque;
+    [SerializeField] private float strenght;
      
     private void Start()
     {
@@ -30,6 +31,7 @@ public class LadyBlue : Enemy
     public void Throw()
     {
         GameObject b = Instantiate(bottle, throwPoint.position, transform.rotation);
-        b.GetComponent<Rigidbody2D>().velocity = angle * streingth;
+        b.GetComponent<Rigidbody2D>().velocity = angle * strenght;
+        b.GetComponent<Rigidbody2D>().AddTorque(torque);
     }
 }

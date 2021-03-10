@@ -37,6 +37,7 @@ public class CameraMove : MonoBehaviour
     {
         if (player.transform.position.x > (newPos.x + halfWidth + offset))
         {
+            SaveManager.level++;
             player.GetComponent<PlayerOne>().stopMovement = true;
             newPos = new Vector3(transform.position.x + (halfWidth * 2), transform.position.y, transform.position.z);
             moveRight = true;
@@ -44,6 +45,7 @@ public class CameraMove : MonoBehaviour
 
         if (player.transform.position.x < (newPos.x - halfWidth - offset))
         {
+            SaveManager.level--;
             player.GetComponent<PlayerOne>().stopMovement = true;
             newPos = new Vector3(transform.position.x - (halfWidth * 2), transform.position.y, transform.position.z);
             moveLeft = true;

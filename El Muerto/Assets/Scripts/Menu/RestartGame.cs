@@ -173,6 +173,6 @@ public class RestartGame : MonoBehaviour
     {
         yield return new WaitForSeconds(seconds);
         SceneController sceneManager = FindObjectOfType<SceneController>();
-        sceneManager.ChangeScene();
+        sceneManager.LoadScene("Level_0" + SaveManager.level);
     }
 }

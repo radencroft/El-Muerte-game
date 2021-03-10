@@ -12,5 +12,9 @@ public class SaveManager : MonoBehaviour
     //...................................................// [ID] [UNLOCKED] NAME BULLETS
     public static Weapon weapon_nothing          = new Weapon(0, true, "nothing", 0);
     public static Weapon weapon_original_shotgun = new Weapon(1, false, "pistol A", 5);
-    public static Weapon weapon_platinum_shotgun = new Weapon(2, false, "pistol B", 10);
+    public static Weapon weapon_platinum_shotgun = new Weapon(2, false, "shotgun A", 10);
+
+    //LEVEL
+    public static int level = 1;
+     
 }

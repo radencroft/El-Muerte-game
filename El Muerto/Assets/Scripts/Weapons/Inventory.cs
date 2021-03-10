@@ -53,6 +53,14 @@ public class Inventory : MonoBehaviour
     {
         weapons[weapon_id].bullets -= n;
     }
+    public void AddBullet(int n)
+    {
+        weapons[weapon_id].bullets += n;
+    }
+    public void EqualsBullets(int n)
+    {
+        weapons[weapon_id].bullets = n;
+    }
 
 
     private void Restrictions()
@@ -75,7 +83,8 @@ public class Inventory : MonoBehaviour
         weapon_id = FindWeaponByName(name).id;
 
         FindWeaponByName(name).unlocked = true;
-        anim.SetLayerWeight(FindWeaponID(name), 1);
+        FindWeaponByName(name).bullets = 6;
+        anim.SetLayerWeight(FindWeaponID(name), 1); 
     }
 
     public void DropWeapon(string name)
@@ -153,5 +162,6 @@ public class Inventory : MonoBehaviour
                 anim.SetLayerWeight(FindWeaponID(FindWeaponByID(i).name), 0);
             }
         }
-    } 
+    }
+     
 }
